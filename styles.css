@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+/* Navbar Menu */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+  background: black;
+}
+
+.logo-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hero Section */
+
 .hero-container {
   background-image: url(top_logo.jpg);
   background-repeat: no-repeat;
