@@ -20,8 +20,61 @@ nav {
   font-weight: 600;
 }
 
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.hamburger-menu span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
 #menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-links-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
   display: none;
+  z-index: 10;
+}
+
+.nav-links-container ul {
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem 0;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* When hamburger is clicked (menu is checked),  */
+#menu-toggle:checked ~ .nav-links-container {
+  max-height: 200px;
+  display: block;
 }
 
 /* Hero Section */
