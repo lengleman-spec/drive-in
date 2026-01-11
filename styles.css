@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 0;
+}
+
 /* Navbar Menu */
 nav {
   display: flex;
@@ -138,3 +143,40 @@ nav {
 }
 
 /* Now Showing Section */
+.now-showing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.now-showing-section p {
+  font-size: 1.1rem;
+  width: 80%;
+}
+
+.now-showing-section h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0 0.5rem;
+}
+
+.now-showing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.now-showing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.now-showing-card img {
+  height: auto;
+  width: 100%;
+}
