@@ -197,8 +197,6 @@ nav {
   position: absolute;
   top: 12px;
   left: 12px;
-  /* top: 55px;
-  left: -11px; */
   background-color: #e50914;
   color: white;
   padding: 0.4rem 0.6rem;
@@ -206,5 +204,9 @@ nav {
   border-radius: 6px;
   font-weight: 600;
   box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.3);
-  /* transform: rotate(-45deg); */
+}
+
+/* Guidelines Section */
+.guidelines-card {
+  display: flex;
 }
