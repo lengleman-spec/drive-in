@@ -208,9 +208,10 @@ nav {
 
 /* Guidelines Section */
 .guidelines-section {
-  background: linear-gradient(to bottom, #000, #111);
+  /* background: linear-gradient(to bottom, #000, #111); */
   color: white;
 }
+
 .guidelines-container {
   display: flex;
   flex-direction: column;
@@ -218,27 +219,32 @@ nav {
   justify-content: center;
   gap: 2rem;
   padding: 3rem 0;
+  background-image: url(popcorn.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
 }
 
 .guidelines-card {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* gap: 3rem; */
+
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 1rem;
-
   width: 75%;
+  z-index: 1;
 }
 
 .guidelines-card i {
   font-size: 2rem;
   margin-right: 3rem;
   margin-left: 1rem;
+  color: white;
 }
 
 .guidelines-card h4 {
@@ -260,6 +266,14 @@ nav {
   line-height: 1.5;
 }
 
+.guidelines-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
 /* Custom arrow */
 .guidelines-card li::before {
   content: "➜";
@@ -270,11 +284,10 @@ nav {
   font-weight: bold;
 }
 
-/* Snack Bar */
+/* ========== Snack Bar ========== */
 .food-container {
-  background-image: url(popcorn.jpg);
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown {
