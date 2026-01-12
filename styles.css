@@ -246,3 +246,77 @@ nav {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
+.guidelines-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.guidelines-card li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Custom arrow */
+.guidelines-card li::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  color: #e50914;
+  font-weight: bold;
+}
+
+/* Snack Bar */
+.food-container {
+  background-image: url(popcorn.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-toggle {
+  display: none;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 130%;
+  right: auto;
+  left: 0;
+  background-color: black;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+#dropdown-toggle:checked ~ .dropdown-menu {
+  display: block;
+}
+
+#dropdown-toggle:checked + .dropdown-icon i {
+  transform: rotate(180deg);
+  transition: transform 0.8s ease;
+}
