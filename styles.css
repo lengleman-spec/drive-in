@@ -5,7 +5,7 @@
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 2rem 0 1rem 0;
 }
 
@@ -134,12 +134,12 @@ nav {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: 3rem;
   line-height: 1.2;
 }
 
 .hero p {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-size: 1.8rem;
 }
 
 /* Now Showing Section */
@@ -152,14 +152,15 @@ nav {
 }
 
 .now-showing-section p {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   width: 80%;
+  margin: 2rem 0;
 }
 
 .now-showing-section h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
-  margin: 1rem 0 0.5rem;
+  margin-top: 2rem;
 }
 
 .now-showing-container {
