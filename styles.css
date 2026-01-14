@@ -299,16 +299,25 @@ nav {
 /* ========== Snack Bar ========== */
 .food-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background: white;
-  padding: 2rem;
+  gap: 2rem;
+  background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 4rem 0;
 }
 
 .dropdown {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
-  margin: 0 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin: 0 2rem; */
+  background: linear-gradient(135deg, #ff8c00, #ffcc33);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 .dropdown-toggle {
@@ -321,7 +330,6 @@ nav {
   cursor: pointer;
   font-size: 2rem;
   color: black;
-  /* position: relative; */
 }
 
 .dropdown-icon i {
@@ -332,16 +340,16 @@ nav {
 }
 
 .dropdown-menu {
-  /* position: absolute; */
   top: 100%;
   right: auto;
   left: 0;
+  width: 100%;
   background-color: black;
   list-style: none;
-  padding: 0.5rem 0;
+  /* padding: 0.5rem 0; */
   border-radius: 8px;
   min-width: 160px;
-  /* display: none; */
+  text-align: left;
   z-index: 5;
 
   max-height: 0;
