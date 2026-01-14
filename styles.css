@@ -239,9 +239,9 @@ nav {
 
 .guidelines-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-
+  gap: 2rem;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -305,9 +305,15 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  /* background: linear-gradient(135deg, #fff8e1, #ffe0b2); */
+  width: 80%;
+  margin: 0 auto;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 4rem 0;
+}
+
+.food-section {
+  background: linear-gradient(135deg, #fff8e1, #ffe0b2);
 }
 
 .dropdown {
@@ -315,9 +321,10 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: linear-gradient(135deg, #ff8c00, #ffcc33);
+  background: linear-gradient(135deg, #ffb74d, #ff9800);
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dropdown-toggle {
