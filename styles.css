@@ -297,13 +297,15 @@ nav {
 }
 
 /* ========== Snack Bar ========== */
+
 .food-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+  /* background: linear-gradient(135deg, #fff8e1, #ffe0b2); */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 4rem 0;
 }
@@ -313,10 +315,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* margin: 0 2rem; */
   background: linear-gradient(135deg, #ff8c00, #ffcc33);
   width: 100%;
-  max-width: 400px;
   border-radius: 10px;
 }
 
@@ -327,9 +327,11 @@ nav {
 .dropdown-icon {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
   font-size: 2rem;
   color: black;
+  flex-direction: 1 1 200px;
 }
 
 .dropdown-icon i {
@@ -343,15 +345,17 @@ nav {
   top: 100%;
   right: auto;
   left: 0;
-  width: 100%;
+  width: 0;
   background-color: black;
+  white-space: nowrap;
   list-style: none;
   /* padding: 0.5rem 0; */
   border-radius: 8px;
   min-width: 160px;
   text-align: left;
   z-index: 5;
-
+  display: flex;
+  flex-direction: column;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
