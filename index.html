@@ -93,6 +93,7 @@
     <!-- Guidelines -->
     <section class="guidelines-section">
       <div class="guidelines-container">
+        <h2>Guidelines</h2>
         <div class="guidelines-card">
           <i class="fa-solid fa-question"></i>
           <div>
@@ -197,15 +198,34 @@
     <section>
       <div class="food-container">
         <div class="dropdown">
-          <input type="checkbox" id="dropdown-toggle" />
-          <label for="dropdown-toggle" class="dropdown-icon">
-            <i class="fa-solid fa-chevron-down"> </i>Hot Items
+          <input
+            type="checkbox"
+            class="dropdown-toggle"
+            id="hot-items-toggle" />
+          <label for="hot-items-toggle" class="dropdown-icon">
+            <i class="fa-solid fa-chevron-down"></i> Hot Items
           </label>
 
           <ul class="dropdown-menu">
             <li><a href="#">Hamburger</a></li>
             <li><a href="#">Hot Dog</a></li>
             <li><a href="#">Soft Pretzel</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <input
+            type="checkbox"
+            class="dropdown-toggle"
+            id="cold-items-toggle" />
+          <label for="cold-items-toggle" class="dropdown-icon">
+            <i class="fa-solid fa-chevron-down"></i> Cold Items
+          </label>
+
+          <ul class="dropdown-menu">
+            <li><a href="#">Soda</a></li>
+            <li><a href="#">Icee</a></li>
+            <li><a href="#">Ice Cream</a></li>
           </ul>
         </div>
       </div>

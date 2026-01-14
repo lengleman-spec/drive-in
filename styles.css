@@ -211,6 +211,8 @@ nav {
 .guidelines-section {
   /* background: linear-gradient(to bottom, #000, #111); */
   color: white;
+  z-index: 2;
+  position: relative;
 }
 
 .guidelines-container {
@@ -224,6 +226,15 @@ nav {
   background-size: cover;
   background-position: bottom;
   position: relative;
+}
+
+.guidelines-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.guidelines-container h2 {
+  color: white;
 }
 
 .guidelines-card {
@@ -289,26 +300,39 @@ nav {
 .food-container {
   display: flex;
   justify-content: center;
+  background: white;
+  padding: 2rem;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+  margin: 0 2rem;
 }
 
-#dropdown-toggle {
+.dropdown-toggle {
   display: none;
 }
 
 .dropdown-icon {
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  font-size: 1.4rem;
-  color: white;
+  font-size: 2rem;
+  color: black;
+  position: relative;
+}
+
+.dropdown-icon i {
+  padding: 1.5rem;
+  display: inline-block;
+  transition: transform 0.5s ease;
+  transform: rotate(0deg);
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 130%;
+  top: 100%;
   right: auto;
   left: 0;
   background-color: black;
@@ -316,7 +340,17 @@ nav {
   padding: 0.5rem 0;
   border-radius: 8px;
   min-width: 160px;
-  display: none;
+  /* display: none; */
+  z-index: 5;
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease, opacity 0.4s ease;
+}
+
+.dropdown-menu li {
+  padding: 0;
 }
 
 .dropdown-menu a {
@@ -324,13 +358,20 @@ nav {
   padding: 0.6rem 1rem;
   color: white;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-#dropdown-toggle:checked ~ .dropdown-menu {
-  display: block;
+.dropdown-menu a:hover {
+  background-color: #222;
 }
 
-#dropdown-toggle:checked + .dropdown-icon i {
+.dropdown-toggle:checked ~ .dropdown-menu {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.5rem 0;
+}
+
+.dropdown-toggle:checked + .dropdown-icon i {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
