@@ -316,6 +316,7 @@ nav {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
+  position: relative;
 }
 
 .food-container h2 {
@@ -326,6 +327,15 @@ nav {
   background-image: url(popcorn.jpg);
   background-size: cover;
   background-position: bottom;
+  position: relative;
+}
+
+.food-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 .dropdown {
@@ -336,10 +346,14 @@ nav {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown i {
+  text-shadow: -1px -5px 6px rgba(0, 0, 0, 0.43);
 }
 
 .dropdown-toggle {
@@ -388,10 +402,6 @@ nav {
 
 .dropdown-menu li {
   padding: 0;
-}
-
-.dropdown-menu li a {
-  color: white;
 }
 
 .dropdown-menu a {
