@@ -297,23 +297,32 @@ nav {
 }
 
 /* ========== Snack Bar ========== */
-
 .food-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   width: 80%;
   margin: 0 auto;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 4rem 0;
+  gap: 2rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.food-container h2 {
+  color: white;
 }
 
 .food-section {
-  background: linear-gradient(135deg, #fff8e1, #ffe0b2);
+  background-image: url(popcorn.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .dropdown {
@@ -321,7 +330,10 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: linear-gradient(135deg, #ffb74d, #ff9800);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -337,7 +349,7 @@ nav {
   justify-content: space-between;
   cursor: pointer;
   font-size: 2rem;
-  color: black;
+  color: white;
   flex-direction: 1 1 200px;
 }
 
@@ -353,12 +365,15 @@ nav {
   right: auto;
   left: 0;
   width: 0;
-  background-color: black;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   white-space: nowrap;
   list-style: none;
   /* padding: 0.5rem 0; */
   border-radius: 8px;
-  min-width: 160px;
+  min-width: 100%;
   text-align: left;
   z-index: 5;
   display: flex;
@@ -366,11 +381,14 @@ nav {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.4s ease, opacity 0.4s ease;
 }
 
 .dropdown-menu li {
   padding: 0;
+}
+
+.dropdown-menu li a {
+  color: white;
 }
 
 .dropdown-menu a {
@@ -379,10 +397,13 @@ nav {
   color: white;
   text-decoration: none;
   transition: background 0.3s ease;
+  font-size: 1.5rem;
+  text-shadow: 2px 3px 3px black;
 }
 
 .dropdown-menu a:hover {
-  background-color: #222;
+  background-color: #444;
+  color: white;
 }
 
 .dropdown-toggle:checked ~ .dropdown-menu {
@@ -395,3 +416,10 @@ nav {
   transform: rotate(180deg);
   transition: transform 0.8s ease;
 }
+
+/* Code extracted */
+/* background: linear-gradient(
+    135deg,
+    rgba(255, 183, 77, 0.55),
+    rgba(255, 152, 0, 0.55)
+  ); */
