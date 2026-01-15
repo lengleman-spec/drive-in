@@ -222,7 +222,7 @@ nav {
   justify-content: center;
   gap: 2rem;
   padding: 3rem 0;
-  background-image: url(popcorn.jpg);
+  background-image: url(big-screen.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -243,7 +243,7 @@ nav {
   align-items: center;
   gap: 2rem;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -253,22 +253,25 @@ nav {
 }
 
 .guidelines-card i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-right: 3rem;
   margin-left: 1rem;
-  color: white;
+  color: black;
 }
 
 .guidelines-card h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: black;
 }
 
 .guidelines-card ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
+  color: black;
+  font-size: 1.3rem;
 }
 
 .guidelines-card li {
