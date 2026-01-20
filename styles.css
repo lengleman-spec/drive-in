@@ -4,8 +4,19 @@
   box-sizing: border-box;
 }
 
+/* Global Colors */
+:root {
+  --bg-color: #0d0d0d;
+  --primary: #ffd700;
+  --secondary: #ff3b3f;
+  --text-color: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.2);
+}
+
 section {
   position: relative;
+  color: var(--primary);
 }
 
 section::after {
@@ -19,6 +30,7 @@ section::after {
 h2 {
   font-size: 2.5rem;
   padding: 2rem 0 1rem 0;
+  color: var(--primary);
 }
 
 /* Navbar Menu */
@@ -28,7 +40,8 @@ nav {
   justify-content: space-between;
   padding: 1rem 2rem;
   position: relative;
-  background: black;
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .logo-container {
@@ -38,7 +51,7 @@ nav {
 }
 
 .logo-container a {
-  color: white;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -59,7 +72,7 @@ nav {
 .hamburger-menu span {
   width: 28px;
   height: 3px;
-  background-color: white;
+  background-color: var(--text-color);
   display: block;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -77,7 +90,7 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: var(--bg-color);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
@@ -95,7 +108,7 @@ nav {
 }
 
 .nav-links-container a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -140,7 +153,7 @@ nav {
 
 .hero {
   position: relative;
-  color: white;
+  color: var(--text-color);
   padding: clamp(1.5rem, 5vw, 4rem);
   z-index: 2;
 }
@@ -152,6 +165,7 @@ nav {
 
 .hero p {
   font-size: 1.8rem;
+  color: var(--primary);
 }
 
 /* Now Showing Section */
@@ -161,7 +175,7 @@ nav {
   align-items: center;
   padding: 3rem 0;
   color: white;
-  background: linear-gradient(180deg, #0b0b0f 0%, #141e30 50%);
+  background: var(--bg-color);
 }
 
 .now-showing-section::before {
@@ -180,12 +194,14 @@ nav {
   font-size: 1.4rem;
   width: 80%;
   margin: 2rem 0;
+  color: var(--text-color);
 }
 
 .now-showing-section h3 {
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;
+  color: var(--primary);
 }
 
 .now-showing-container {
@@ -210,12 +226,12 @@ nav {
     transform 0.3s ease,
     box-shadow 0.3s ease;
   color: black;
-  background: linear-gradient(180deg, #ffffff, #f0f0f0);
+  background: var(--card-bg);
 }
 
 .now-showing-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 18px 35px rgba(255, 215, 0, 0.6);
 }
 
 .now-showing-card img {
@@ -227,8 +243,8 @@ nav {
   position: absolute;
   top: 12px;
   left: 12px;
-  background-color: #e50914;
-  color: white;
+  background-color: var(--secondary);
+  color: var(--text-color);
   padding: 0.4rem 0.6rem;
   font-size: 1rem;
   border-radius: 6px;
@@ -238,7 +254,7 @@ nav {
 
 /* Guidelines Section */
 .guidelines-section {
-  /* background: linear-gradient(to bottom, #000, #111); */
+  background: var(--bg-color);
   color: white;
   z-index: 2;
   position: relative;
@@ -272,9 +288,9 @@ nav {
   align-items: center;
   gap: 2rem;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -287,21 +303,21 @@ nav {
   font-size: 2.5rem;
   margin-right: 3rem;
   margin-left: 1rem;
-  color: black;
+  color: var(--primary);
 }
 
 .guidelines-card h4 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: black;
+  color: var(--primary);
 }
 
 .guidelines-card ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
-  color: black;
+  color: var(--text-color);
   font-size: 1.3rem;
 }
 
@@ -326,7 +342,7 @@ nav {
   position: absolute;
   left: 0;
   top: 0.15rem;
-  color: #e50914;
+  color: var(--secondary);
   font-weight: bold;
 }
 
@@ -341,12 +357,11 @@ nav {
   width: 80%;
   margin: 0 auto;
   /* padding: 4rem 0; */
-
   gap: 2rem;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -425,11 +440,12 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    max-height 0.5s ease,
+    opacity 0.5s ease,
+    padding 0.3s ease;
   white-space: nowrap;
   list-style: none;
-  /* padding: 0.5rem 0; */
+  padding: 0;
   border-radius: 8px;
   min-width: 100%;
   text-align: left;
@@ -473,7 +489,8 @@ nav {
 
 /* Directions */
 .map-section {
-  color: black;
+  color: var(--text-color);
+  background: var(--bg-color);
 }
 
 .map-section h2 {
@@ -496,17 +513,17 @@ nav {
 }
 
 .map-text {
-  text-align: center;
   font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: 14px;
   max-width: 600px;
   margin: 2rem auto;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
 }
 
 address {
   font-style: normal;
   padding: 1rem;
+  text-align: center;
 }
