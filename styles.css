@@ -356,7 +356,7 @@ nav {
 
 .food-container h2 {
   color: white;
-  padding: 0;
+  padding-top: 2rem;
 }
 
 .food-section {
@@ -364,6 +364,7 @@ nav {
   background-size: cover;
   background-position: bottom;
   position: relative;
+  padding: 6rem 0;
 }
 
 .food-section::before {
@@ -472,7 +473,7 @@ nav {
 
 /* Directions */
 .map-section {
-  color: white;
+  color: black;
 }
 
 .map-section h2 {
