@@ -130,6 +130,7 @@ nav {
   text-decoration: none;
   font-size: 1.2rem;
   display: block;
+  margin: 0 2rem;
 }
 
 /* When hamburger is clicked (menu is checked),  */
@@ -303,9 +304,10 @@ nav {
 
 .guidelines-card {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
   border-radius: 14px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -320,8 +322,6 @@ nav {
 
 .guidelines-card i {
   font-size: 2.5rem;
-  margin-right: 3rem;
-  margin-left: 1rem;
   color: var(--primary);
 }
 
@@ -335,7 +335,7 @@ nav {
 .guidelines-card ul {
   list-style: none;
   padding-left: 0;
-  margin-left: 0;
+  margin-left: 1rem;
   color: var(--text-color);
   font-size: 1.3rem;
 }
@@ -345,6 +345,13 @@ nav {
   padding-left: 1.6rem;
   margin-bottom: 0.6rem;
   line-height: 1.5;
+}
+
+.guidelines-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .guidelines-container::before {
