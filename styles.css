@@ -616,7 +616,36 @@ address {
 }
 
 /* FOOTER */
+footer {
+  padding: 2rem 0;
+  background-color: var(--bg-color);
+  color: var(--primary);
+}
+
 .footer-links {
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer-container ul li {
+  list-style-type: none;
+  padding: 0.2rem 0;
+}
+
+.footer-container li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.footer-container h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
 }
