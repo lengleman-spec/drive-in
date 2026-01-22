@@ -103,7 +103,6 @@ nav {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  display: none;
   z-index: 10;
 }
 
@@ -116,15 +115,26 @@ nav {
   align-items: center;
 }
 
+.nav-links-container li {
+  width: 100%;
+}
+
+/* where i am */
+.nav-links-container li:hover {
+  background-color: #444;
+  color: white;
+}
+
 .nav-links-container a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 1.2rem;
+  display: block;
 }
 
 /* When hamburger is clicked (menu is checked),  */
 #menu-toggle:checked ~ .nav-links-container {
-  max-height: 200px;
+  max-height: 400px;
   display: block;
 }
 
