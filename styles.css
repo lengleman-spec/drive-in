@@ -614,3 +614,9 @@ address {
     0 30px 60px rgba(0, 0, 0, 0.9),
     0 0 45px rgba(255, 215, 0, 0.6);
 }
+
+/* FOOTER */
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
