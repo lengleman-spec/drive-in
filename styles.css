@@ -521,6 +521,14 @@ nav {
 
 .map-section h2 {
   text-align: center;
+  position: relative;
+}
+
+.map-section h2::before {
+  content: "📍";
+  display: inline-block;
+  margin-right: 0.5rem;
+  animation: shake 0.5s infinite;
 }
 
 .map-section img {
@@ -655,6 +663,10 @@ footer {
   font-size: 1.2rem;
 }
 
+.footer-container li a:hover {
+  color: var(--primary);
+}
+
 .footer-container h4 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -665,6 +677,29 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
+}
+
+/* KEYFRAMES */
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* MEDIA QUERIES */
