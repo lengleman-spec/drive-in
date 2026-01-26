@@ -315,6 +315,7 @@ nav {
 .guidelines-card i {
   font-size: 2.5rem;
   color: var(--primary);
+  margin: 1rem 0 1rem 1.3rem;
 }
 
 .guidelines-card h4 {
@@ -559,7 +560,7 @@ address {
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  padding: 5rem 2rem;
+  padding: 5rem 3rem;
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, #0d0d0d 0%, #121212 40%, #0d0d0d 100%);
@@ -577,7 +578,7 @@ address {
 .entrance-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex: 1;
   max-width: 500px;
@@ -726,10 +727,21 @@ footer {
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     width: 80%;
     margin: 1rem auto;
     padding: 1rem;
+  }
+
+  .now-showing-card img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .now-showing-text {
+    flex: 1;
   }
 
   .now-showing-text {
@@ -741,9 +753,20 @@ footer {
 
   .now-showing-text p {
     margin: 1rem 2rem;
+    font-size: 2rem;
   }
+
   .now-showing-text h3 {
     text-align: left;
     margin: 0 2rem;
+    font-size: 2.5rem;
+  }
+
+  .now-showing-section h2 {
+    font-size: 4rem;
+  }
+
+  .now-showing-section p {
+    font-size: 1.75rem;
   }
 }
