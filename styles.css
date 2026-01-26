@@ -769,4 +769,17 @@ footer {
   .now-showing-section p {
     font-size: 1.75rem;
   }
+
+  /* Guidelines */
+  .guidelines-container h2 {
+    font-size: 4rem;
+  }
+
+  .guidelines-card h4 {
+    font-size: 2.75rem;
+  }
+
+  .guidelines-card ul {
+    font-size: 2rem;
+  }
 }
