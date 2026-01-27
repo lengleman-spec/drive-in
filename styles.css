@@ -444,6 +444,19 @@ nav {
   margin-bottom: 1rem;
 }
 
+.snack-pass button {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  margin: 3rem;
+  background-color: var(--primary);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 8px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(255, 215, 0, 0.4);
+}
+
 .snack-tagline {
   font-size: 1.5rem;
   color: white;
