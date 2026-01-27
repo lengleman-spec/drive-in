@@ -448,13 +448,18 @@ nav {
   font-size: 1.5rem;
   padding: 1rem 3rem;
   margin: 3rem;
-  background-color: var(--primary);
-  color: var(--bg-color);
-  border: none;
+  color: white;
+  border: 1px solid rgba(255, 215, 0, 0.4);
   border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 215, 0, 0.8),
+    rgba(255, 235, 59, 0.6),
+    rgba(192, 173, 4, 0.671)
+  );
   box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.8),
-    0 0 40px rgba(255, 215, 0, 0.4);
+    0 0 25px rgba(255, 215, 0, 0.6),
+    0 20px 40px rgba(0, 0, 0, 0.8);
 }
 
 .snack-tagline {
