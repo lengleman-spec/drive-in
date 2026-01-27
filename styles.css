@@ -37,7 +37,7 @@ section::after {
 h2 {
   font-size: 2.5rem;
   padding: 2rem 0 1rem 0;
-  color: var(--primary);
+  color: white;
 }
 
 /* Navbar Menu */
@@ -117,7 +117,6 @@ nav {
   width: 100%;
 }
 
-/* where i am */
 .nav-links-container li:hover {
   background-color: #444;
   color: white;
@@ -213,6 +212,10 @@ nav {
   width: 80%;
   margin: 2rem 0;
   color: var(--text-color);
+}
+
+.now-showing-section h2 {
+  color: var(--primary);
 }
 
 .now-showing-section h3 {
@@ -400,7 +403,7 @@ nav {
 }
 
 .food-container h2 {
-  color: white;
+  color: var(--primary);
   padding-top: 2rem;
 }
 
@@ -594,9 +597,8 @@ nav {
 
 /* ================= Directions ================= */
 .map-section {
-  /* color: var(--text-color);
-  background: var(--bg-color); */
   background-image: url(starry-night.jpg);
+  padding-bottom: 4rem;
 }
 
 .map-section h2 {
@@ -626,7 +628,7 @@ nav {
   border: 2px solid rgba(255, 215, 0, 0.4);
   width: 100%;
   max-width: 900px;
-  height: 450px;
+  height: 550px;
   display: block;
   margin: 0 auto;
   z-index: 1;
@@ -640,13 +642,12 @@ nav {
 
 .map-text {
   font-size: 1.5rem;
-
   padding: 2rem;
   border-radius: 14px;
-  max-width: 600px;
-  margin: 5rem auto;
+  max-width: 80%;
+  margin: 5rem auto 0 auto;
   box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
-  background: rgba(0, 0, 0, 0.6); /* or 0.5–0.7 */
+  background: rgba(0, 0, 0, 0.6);
 }
 
 address {
