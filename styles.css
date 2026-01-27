@@ -592,10 +592,11 @@ nav {
   transition: transform 0.8s ease;
 }
 
-/* Directions */
+/* ================= Directions ================= */
 .map-section {
-  color: var(--text-color);
-  background: var(--bg-color);
+  /* color: var(--text-color);
+  background: var(--bg-color); */
+  background-image: url(starry-night.jpg);
 }
 
 .map-section h2 {
@@ -620,19 +621,32 @@ nav {
 }
 
 .map-section iframe {
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3);
+  border: 2px solid rgba(255, 215, 0, 0.4);
   width: 100%;
-  max-width: 100%;
+  max-width: 900px;
+  height: 450px;
   display: block;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.map-section iframe:hover {
+  transform: scale(1.02);
 }
 
 .map-text {
   font-size: 1.5rem;
-  background: var(--card-bg);
+
   padding: 2rem;
   border-radius: 14px;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 5rem auto;
   box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6); /* or 0.5–0.7 */
 }
 
 address {
@@ -649,7 +663,8 @@ address {
   padding: 5rem 3rem;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #0d0d0d 0%, #121212 40%, #0d0d0d 100%);
+
+  /* background: linear-gradient(180deg, #0d0d0d 0%, #121212 40%, #0d0d0d 100%); */
 }
 
 .entrance-text h3 {
