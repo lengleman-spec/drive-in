@@ -595,6 +595,77 @@ nav {
   transition: transform 0.8s ease;
 }
 
+/* ================= PRICING ================= */
+.admission-section {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+}
+
+.admission-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.admission-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.admission-container a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 3;
+  color: black;
+  background-color: white;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  margin: 4rem auto;
+  z-index: 0;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #5b2dff;
+  border-radius: 18px;
+  transform: translate(14px, 14px);
+
+  z-index: -1;
+}
+
+/* Front card */
+.card-inner {
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 18px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.card-outer {
+  background-color: #ebecee;
+  /* display: flex;
+  align-items: flex-end; */
+}
+
 /* ================= Directions ================= */
 .map-section {
   background-image: url(starry-night.jpg);
@@ -661,7 +732,7 @@ address {
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  padding: 5rem 3rem;
+  padding: 5rem 1rem;
   position: relative;
   overflow: hidden;
 
@@ -697,6 +768,7 @@ address {
 .entrance-eyebrow {
   display: inline-block;
   font-size: 1.1rem;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--secondary);
