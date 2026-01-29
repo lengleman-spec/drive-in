@@ -642,28 +642,31 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: #5b2dff;
+  background: lightgray;
   border-radius: 18px;
   transform: translate(14px, 14px);
-
+  min-height: 400px;
   z-index: -1;
 }
 
 /* Front card */
 .card-inner {
   position: relative;
-  background: rgba(0, 0, 0, 0.85);
+  background: #0d0d0d;
   border-radius: 18px;
   padding: 2rem;
   border: 1px solid rgba(255, 215, 0, 0.4);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   z-index: 1;
+  min-height: 350px;
 }
 
-.card-outer {
-  background-color: #ebecee;
-  /* display: flex;
-  align-items: flex-end; */
+.card-outer a {
+  color: black;
+  background: transparent;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 1.75rem;
 }
 
 /* ================= Directions ================= */
