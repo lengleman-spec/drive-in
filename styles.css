@@ -669,6 +669,14 @@ nav {
   margin-left: 1.75rem;
 }
 
+.card-outer i {
+  z-index: 3;
+  position: relative;
+  color: black;
+  margin-left: 0.75rem;
+  font-size: 2rem;
+}
+
 /* ================= Directions ================= */
 .map-section {
   background-image: url(starry-night.jpg);

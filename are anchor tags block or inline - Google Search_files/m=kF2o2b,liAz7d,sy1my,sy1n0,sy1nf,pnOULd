@@ -1,0 +1,18 @@
+loaded_h_0(function(_){var window=this;
+_.v("kF2o2b");
+_.$f(_.V_a,class extends _.go{constructor(){super();this.Ba=new Set;this.Ca=new Set;this.oa=new Set}updateSrpSuggestionGroup(a,b){for(const c of this.Ba)c.zwe(a,b);this.Aa()}Aa(){for(const a of this.Ca)a.Awe()}updateMagiStateParams(a){for(const b of this.oa)b.ywe(a)}oXd(a){this.Ba.add(a)}pXd(a){this.Ca.add(a)}nXd(a){this.oa.add(a)}});
+_.w();
+_.v("liAz7d");
+_.A$p=new _.Uf(_.W_a);
+_.w();
+_.fad=function(){return _.lm("center_col")};
+_.gad=function(){return _.WIa("rcnt")};_.had=function(){return _.gad()||_.fad()};
+var Ubd,Sbd;_.Tbd=function(){return document.querySelector("[jsname=xcvsnc]")?document.querySelector("[jsname=xcvsnc]"):_.d8a?document.querySelector("[data-st-tgt=fb"):_.km(Sbd)};_.Vbd=function(a,b){const c=_.Tbd();c?Ubd(c,a,b):_.gad()&&_.Ia(_.pm("rfiSsc"),d=>{Ubd(d,a,b,!0)})};
+Ubd=function(a,b,c,d=!1){a=_.mm("A",a);for(const f of a){if(d&&(f.classList.contains("zItAnd")&&!f.classList.contains("FOU1zf")||f.classList.contains("nPDzT")&&!f.classList.contains("LatpMc")))break;if(a=f.getAttribute("href"))if(a.startsWith("/url")&&b==="q"){var e=_.td(a,"q");if(!e)continue;e=_.wd(e,b,c);f.setAttribute("href",_.wd(a,"q",e))}else f.setAttribute("href",_.wd(a,b,c))}};Sbd=_.gad()?"pTwnEc":"hdtb-sc";
+_.v("pnOULd");
+_.$f(_.X_a,class extends _.go{static Sa(){return{service:{navigation:_.Zv,ckc:_.A$p}}}constructor(a){super();this.hc=a.service.navigation;this.ckc=a.service.ckc}updateLinks(a){_.Vbd("q",a)}navigateTo(a,b=!1){this.hc.navigateTo(a,b)}hideMobileModeSelector(){if(!_.gad()){var a=_.Tbd();a&&(a.style.display="none")}}showMobileModeSelector(){if(!_.gad()){var a=_.Tbd();a&&(a.style.display="")}}updateSrpSuggestionGroup(a,b){this.ckc.updateSrpSuggestionGroup(a,b)}updateMagiStateParams(a){this.ckc.updateMagiStateParams({mya:a})}fetch(a,
+b){return _.BUb(a,{urlParams:b})}});
+
+_.w();
+});
+// Google Inc.
