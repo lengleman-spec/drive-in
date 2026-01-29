@@ -597,10 +597,11 @@ nav {
 
 /* ================= PRICING ================= */
 .admission-section {
-  display: grid;
-  place-content: center;
-  place-items: center;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 6rem 0;
 }
 
 .admission-container {
@@ -675,6 +676,10 @@ nav {
   color: black;
   margin-left: 0.75rem;
   font-size: 2rem;
+}
+
+.fa-street-view {
+  color: white;
 }
 
 /* ================= Directions ================= */
