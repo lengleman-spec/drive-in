@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Global Colors */
 :root {
   --bg-color: #0d0d0d;
@@ -595,7 +599,7 @@ nav {
   transition: transform 0.8s ease;
 }
 
-/* ================= PRICING ================= */
+/* ================= PRICING/ADMISSION ================= */
 .admission-section {
   display: flex;
   justify-content: center;
@@ -683,6 +687,29 @@ nav {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
   z-index: 1;
   min-height: 350px;
+}
+
+.card-outer {
+  position: relative;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: linear-gradient(135deg, #ffd700, #ffb700);
+  color: #111;
+
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  z-index: 4;
 }
 
 .card-outer a {
