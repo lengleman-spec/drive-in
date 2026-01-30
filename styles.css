@@ -653,6 +653,10 @@ nav {
 /* Front card */
 .card-inner {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  gap: 1rem;
   background: #0d0d0d;
   border-radius: 18px;
   padding: 2rem;
@@ -678,10 +682,39 @@ nav {
   font-size: 2rem;
 }
 
-.fa-street-view {
+.card-inner i {
   color: white;
 }
 
+.card-inner ul {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* margin-top: 2rem; */
+}
+
+.separator {
+  width: 25%;
+  height: 2px;
+  background: white;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.card-top i {
+  font-size: 2rem;
+}
+
+.price {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 /* ================= Directions ================= */
 .map-section {
   background-image: url(starry-night.jpg);
