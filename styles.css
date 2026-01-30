@@ -601,14 +601,23 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  padding: 6rem 0;
+
+  position: relative;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 65%),
+    linear-gradient(180deg, #050505, #0d0d0d 40%, #050505);
+  z-index: 1;
+}
+
+.admission-section > h2 {
+  color: white;
 }
 
 .admission-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .admission-container ul {
@@ -634,8 +643,8 @@ nav {
 
 .card {
   position: relative;
-  width: 300px;
-  margin: 4rem auto;
+  width: 350px;
+  margin-bottom: 4rem;
   z-index: 0;
 }
 
@@ -643,11 +652,21 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: lightgray;
+  background: linear-gradient(180deg, #ffd700, #e6c200);
+  color: #0d0d0d;
+
   border-radius: 18px;
   transform: translate(14px, 14px);
   min-height: 400px;
   z-index: -1;
+}
+
+/* Red offset card for Single + Child tickets */
+.card.card-single::before {
+  background: linear-gradient(180deg, #ff3b3f, #c62828);
+  color: #fff;
+
+  /* background: #2f5f63; */
 }
 
 /* Front card */
@@ -715,6 +734,7 @@ nav {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
 /* ================= Directions ================= */
 .map-section {
   background-image: url(starry-night.jpg);
