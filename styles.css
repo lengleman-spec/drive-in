@@ -469,6 +469,11 @@ nav {
     0 20px 40px rgba(0, 0, 0, 0.8);
 }
 
+.snack-pass button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .snack-tagline {
   font-size: 1.5rem;
   color: white;
@@ -704,10 +709,8 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
-
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
   z-index: 4;
 }
@@ -983,11 +986,35 @@ footer {
 
   .now-showing-card {
     width: 60%;
-    border: 1px solid red;
   }
 
-  .now-showing-text p {
-    margin-left: 1.2rem;
+  .card {
+    position: relative;
+  }
+
+  .card-inner {
+    display: flex;
+    flex-direction: center;
+  }
+
+  /* Position CTA inside the red box for single + child cards */
+  .card.card-single {
+    position: relative; /* make red box the positioning context */
+  }
+
+  .card.card-single .card-cta {
+    position: absolute;
+    bottom: -141px; /* same as ::before translate Y */
+    /* left: 14px; */
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    /* padding: 0.5rem 1rem; */
+    border-radius: 8px;
+    text-decoration: none;
   }
 }
 
