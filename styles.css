@@ -969,7 +969,8 @@ footer {
   }
 }
 
-/* MEDIA QUERIES */
+/* ========== MEDIA QUERIES ========== */
+/* SMALL SCREENS */
 @media screen and (min-width: 730px) {
   .logo-container a {
     font-size: 2rem;
@@ -1002,15 +1003,14 @@ footer {
     flex-direction: center;
   }
 
-  /* Position CTA inside the red box for single + child cards */
   .card.card-single {
-    position: relative; /* make red box the positioning context */
+    position: relative;
   }
 
   .card.card-single .card-cta {
     position: absolute;
-    bottom: -141px; /* same as ::before translate Y */
-    /* left: 14px; */
+    bottom: -141px;
+
     z-index: 5;
 
     display: flex;
@@ -1023,7 +1023,7 @@ footer {
   }
 }
 
-/* ============================================= */
+/* MEDIUM SCREEN */
 @media screen and (min-width: 876px) {
   .now-showing-section > p {
     font-size: 1.8rem;
@@ -1076,7 +1076,6 @@ footer {
     font-size: 1.5rem;
   }
 
-  /* Guidelines */
   .guidelines-container h2 {
     font-size: 4rem;
   }
@@ -1098,6 +1097,7 @@ footer {
   }
 }
 
+/* LARGE SCREEN */
 @media screen and (min-width: 992px) {
   .map-section {
     background-image: url(starry-night.jpg);
@@ -1105,4 +1105,22 @@ footer {
     background-size: cover;
     padding-bottom: 4rem;
   }
+
+  .map-section h2 {
+    font-size: 3rem;
+  }
+
+  .entrance-eyebrow {
+    font-size: 1.5rem;
+  }
+
+  .entrance-text h3 {
+    font-size: 3rem;
+  }
+
+  .entrance-text p {
+    font-size: 1.8rem;
+  }
 }
+
+/* ========== XL SCREENS/DESKTOP ========== */
