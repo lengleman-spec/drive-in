@@ -589,7 +589,8 @@ nav {
 }
 
 .dropdown-menu a:hover {
-  background-color: #444;
+  /* background-color: #444; */
+  background-color: var(--primary);
   color: white;
 }
 
