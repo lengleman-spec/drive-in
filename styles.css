@@ -1025,6 +1025,10 @@ footer {
 
 /* ============================================= */
 @media screen and (min-width: 876px) {
+  .now-showing-section > p {
+    font-size: 1.8rem;
+  }
+
   .now-showing-card {
     position: relative;
     display: flex;
@@ -1043,23 +1047,19 @@ footer {
   }
 
   .now-showing-text {
-    flex: 1;
-  }
-
-  .now-showing-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
+    flex: 1;
   }
 
   .now-showing-text p {
-    margin: 1rem 2rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    text-align: start;
   }
 
   .now-showing-text h3 {
-    text-align: left;
     margin: 0 2rem;
     font-size: 2.5rem;
   }
@@ -1068,8 +1068,12 @@ footer {
     font-size: 4rem;
   }
 
-  .now-showing-section p {
-    font-size: 1.75rem;
+  .now-showing-card h3 {
+    text-align: center;
+  }
+
+  .now-showing-p {
+    font-size: 1.5rem;
   }
 
   /* Guidelines */
@@ -1078,11 +1082,11 @@ footer {
   }
 
   .guidelines-card h4 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 
   .guidelines-card ul {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .guidelines-card li {
