@@ -1097,3 +1097,12 @@ footer {
     font-size: 4rem;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .map-section {
+    background-image: url(starry-night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 4rem;
+  }
+}
