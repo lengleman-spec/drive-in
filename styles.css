@@ -1085,6 +1085,10 @@ footer {
     font-size: 2rem;
   }
 
+  .guidelines-card li {
+    padding-left: 2.5rem;
+  }
+
   .dropdown i {
     font-size: 4rem;
   }
