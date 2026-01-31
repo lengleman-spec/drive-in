@@ -985,6 +985,10 @@ footer {
     height: 6px;
   }
 
+  #menu-toggle:checked + .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
   .now-showing-card {
     width: 60%;
   }
