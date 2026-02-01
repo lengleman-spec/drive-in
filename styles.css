@@ -266,7 +266,7 @@ nav {
 
 .now-showing-text p {
   margin-left: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .badge {
@@ -1128,7 +1128,12 @@ footer {
   .entrance-text {
     margin-left: 2rem;
   }
+
   .entrance-image {
     margin-right: 2rem;
+  }
+
+  .now-showing-text .now-showing-p {
+    font-size: 1.8rem;
   }
 }
