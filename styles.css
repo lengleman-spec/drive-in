@@ -1124,3 +1124,11 @@ footer {
 }
 
 /* ========== XL SCREENS/DESKTOP ========== */
+@media screen and (min-width: 1100px) {
+  .entrance-text {
+    margin-left: 2rem;
+  }
+  .entrance-image {
+    margin-right: 2rem;
+  }
+}
